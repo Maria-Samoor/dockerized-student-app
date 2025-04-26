@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students List</title>
+</head>
+<body>
+    <h1>Students</h1>
+    <ul>
+        {% for name, dob, avg in students %}
+            <li>
+                <a href="{{ url_for('student', name=name) }}">{{ name }}</a> (DOB: {{ dob }})
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
