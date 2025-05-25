@@ -34,7 +34,7 @@ This project is a simple Flask web application that calculates student averages 
    docker pull mariaahs/student-app:latest
 2. Run the container:
    ```bash
-   docker run -p 5000:5000 mariaahs/student-app
+   docker run -d -p 5000:5000 mariaahs/student-app
 3. Access the application:
    ```bash
    http://localhost:5000
@@ -50,7 +50,7 @@ This project is a simple Flask web application that calculates student averages 
    docker build -t student-app .
 3. Run the container:
    ```bash
-   docker run -p 5000:5000 student-app
+   docker run -d -p 5000:5000 student-app
 4. Access the application:
    ```bash
    http://localhost:5000
